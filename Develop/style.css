@@ -93,6 +93,11 @@ button[disabled] {
   background: #c0c7cf;
 }
 
+/* .criteriaCheckbox>label {
+  display: block;
+}
+
+ */
 .float-right {
   float: right;
 }
