@@ -2,6 +2,7 @@ const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 const nums = "0123456789";
 const specChar = " !#$%&'()*+,-./:;<=>?@[]^_`{|}~".concat('"');
+let passwordText = document.querySelector("#password");
 let pwChar = [];
 let pwLength;
 let inclChar = "";
@@ -102,7 +103,6 @@ function generatePassword() {
 
 function writePassword() {
   var password = pwChar.join("");
-  var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
 
