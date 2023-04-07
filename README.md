@@ -22,7 +22,8 @@ The following link is to the website for Password Generator.
 https://jenryt.github.io/PasswordGenerator/
 
 The following images are some snapshots of the site.
-Assets/images/pwGenerator.png
+<img src="./Assets/images/pwGenerator.png
+" alt="screenshot of password generator app">
 
 The following website provides a list of special characters that’s accepted for password.
 https://owasp.org/www-community/password-special-characters
