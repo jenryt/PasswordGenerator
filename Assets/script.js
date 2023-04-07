@@ -11,18 +11,28 @@ let inclChar = "";
 const generateBtn = document.querySelector("#generate");
 
 function checkLength() {
-  pwLength = parseInt(
-    prompt(
-      "Please enter the desire length of your password.\nIt has to be a number and between 8~128."
-    )
+  const input = prompt(
+    "Please enter the desire length of your password.\nIt has to be a number and between 8~128."
   );
+  // Check if user clicked "Cancel"
+  if (input === null || input === undefined) {
+    console.log("cancel", input);
+    return; // Return null to indicate cancellation
+  }
+  pwLength = parseInt(input);
   if (isNaN(pwLength) || pwLength > 128 || pwLength < 8) {
+    console.log("input", pwLength);
+
     alert("Oopsie! Please enter a valid number!");
     checkLength();
   }
+  generatePassword();
 }
 
 function generatePassword() {
+  pwChar = [];
+  inclChar = "";
+
   let upperIn = prompt(
     "(1/4) Do you like to include uppercase characters?\nPlease only enter Y or N to signify your choice of Yes or No."
   );
@@ -107,7 +117,7 @@ function writePassword() {
 }
 
 generateBtn.addEventListener("click", function () {
+  passwordText.value = "";
   checkLength();
-  generatePassword();
   writePassword();
 });
