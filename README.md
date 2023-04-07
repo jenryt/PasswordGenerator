@@ -1,19 +1,28 @@
 # Password Generator
 
-Work as an individual to build upon the base code.
+In today's world, having secure passwords is essential to protect your personal and professional information. This app is designed to help users generate strong and random passwords based on their specific criteria.
 
-* As a developer, I want to make sure the users have control over what criteria they’d like to include in their code, and the length of their code. 
+## How to Use
 
-## Acceptance Criteria
+1. Click the "Generate Password" button to start.
+2. Select the desired length of your password, ranging from 8-128 characters. If you enter an invalid input, you will be prompted to re-enter the desired length.
+3. In the second part of the process, you will be asked to select the desired types of characters, including uppercase letters, lowercase letters, numbers, and special characters. Again, if you enter an invalid input, you will be prompted to re-enter your selections.
+4. After all necessary information is gathered, the app will generate a random password according to your input.
+5. If you need to generate another password, simply click the "Generate Password" button again and repeat the steps.
 
-* It is done when users are prompted to the window that allow users to insert the length of there code and displays options for different criteria (Upper-case, Lower-case, numbers, Special Characters, etc) before they generate the code.
+## Security Features
 
-* It is done when users click on the “Generate Password” button, a randomized code is generated. 
+To ensure the security of your generated passwords, this app uses a strong random number generator and does not store any passwords in plain text.
+
+Thank you for using our Password Generator App!
 
 ## Assets
 
-The following website provides a list of special characters that’s accepted for password. 
-https://owasp.org/www-community/password-special-characters
-
-The following link is to the website for password generator. 
+The following link is to the website for Password Generator.
 https://jenryt.github.io/PasswordGenerator/
+
+The following images are some snapshots of the site.
+Assets/images/pwGenerator.png
+
+The following website provides a list of special characters that’s accepted for password.
+https://owasp.org/www-community/password-special-characters
